@@ -21,10 +21,10 @@ app.use(cors());
 app.use(bodyParser());
 
 // passport middleware
-app.use(passport.initialize());
-app.use(passport.session());
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-require('./config/passport')(passport);
+// require('./config/passport')(passport);
 
 // static folder
 app.use(express.static(path.join(__dirname, 'public')));
